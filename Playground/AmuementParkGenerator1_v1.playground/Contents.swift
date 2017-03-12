@@ -38,14 +38,14 @@ enum EntrantInfoFields {
     case addressState
     case addressZip
     case dateOfBirth
-
-    func requiredInfo(forEntrant: EntrantIdentifiable) -> Bool {
+    
+    func isFieldManditory(forEntrant: EntrantIdentifiable) -> Bool {
         
         switch forEntrant {
-        case GuestType.classic,GuestType.freeChild:
+        case GuestType.classic,GuestType.VIP:
             return false
             
-        case GuestType.VIP:
+        case GuestType.freeChild:
             let infoReqArr = [EntrantInfoFields.dateOfBirth]
             return infoReqArr.contains(self)
             
@@ -208,24 +208,54 @@ struct EntrantProfileInformation{
     var addressStreet: String?
     var addressCity: String?
     var addressState: String?
-    var addressZip: Int?
-    var dateOfBirth: NSDate?
+    var addressZip: String?
+    var dateOfBirth: String?
+    let allEnumInfoField: [EntrantInfoFields] = [.firstName, .lastName, .addressStreet, .addressCity, .addressState, .addressZip, .dateOfBirth]
     
- }
     
+    
+    func requiredInfo(forEntrant: EntrantIdentifiable) -> Dictionary<EntrantInfoFields,Bool>{
+        var required: [EntrantInfoFields: Bool] = [:]
+        
+        for field in allEnumInfoField{
+            required[field] = field.isFieldManditory(forEntrant: forEntrant)
+        }
+        return required
+    }
+    
+    func returnUserInfoDict(forField: EntrantInfoFields) -> Dictionary<EntrantInfoFields,String?>{
+        
+        var dict: [EntrantInfoFields: String] = [:]
+        
+        if let fname = self.firstName{
+            dict[.firstName] = fname
+        } else{
+            dict[.firstName] = nil
+        }
+        
+        if let lname = self.lastName{
+            dict[.lastName] = lname
+        } else{
+            dict[.lastName] = nil
+        }
+    
+        if let fname = self.firstName{
+            dict[.firstName] = fname
+        } else{
+            dict[.firstName] = nil
+        }
+        
+        
+        return dict
 
-
+    }
+    
+    
+    
+}
 
 //class Pass: PassGenerator{
 class Pass{
-
-//    var firstName: EntrantInfoFields?
-//    var lastName: EntrantInfoFields?
-//    var addressStreet: EntrantInfoFields?
-//    var addressCity: EntrantInfoFields?
-//    var addressState: EntrantInfoFields?
-//    var addressZip: EntrantInfoFields?
-//    var dateOfBirth: EntrantInfoFields?
     
     let entrantProfile: EntrantIdentifiable
     let entrantInfo = EntrantProfileInformation()
@@ -245,6 +275,8 @@ class Pass{
             default:
                 throw ErrorTypeCasting.UnknownUserType("Unknow Entrant Type: \(forEntrant)")
         }
+    }
+}
         
 //           entrantInfo = EntrantProfileInformation(firstName: firstName, lastName: lastName, addressStreet: street, addressCity: city, addressState: state, addressZip: ZIP, dateOfBirth: DOB)
 //        
@@ -276,8 +308,8 @@ class Pass{
 //        if let DOB = DOB{
 //            self.dateOfBirth = EntrantInfoFields.dateOfBirth(DOB)
 //        }
-    
-    }
+//    
+//    }
     
 //    func validateRequiredInfo(){
 //        
@@ -302,9 +334,14 @@ class Pass{
 //        print
 //    }
 //    
-}
 
-let person = ManagerType.manager
+
+let person = GuestType.freeChild
+let identity = EntrantProfileInformation(firstName: "Sherief", lastName: "Wissa", addressStreet: nil, addressCity: nil, addressState: nil, addressZip: nil, dateOfBirth: nil)
+
+
+
+EntrantInfoFields.dateOfBirth.isFieldManditory(forEntrant: GuestType.freeChild)
 
 //
 //do{
@@ -315,5 +352,4 @@ let person = ManagerType.manager
 //    print(string)
 //}
 
-let required = EntrantInfoFields.addressZip.requiredInfo(forEntrant: GuestType.classic)
 
