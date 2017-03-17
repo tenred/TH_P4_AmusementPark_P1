@@ -1,6 +1,12 @@
-import Foundation
+//
+//  Protocols_enums.swift
+//  SingleViewAppSwiftTemplate
+//
+//  Created by Sherief Wissa on 17/3/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
+//
 
-// MARK: Protocol Declaration
+import Foundation
 
 protocol Identity{
     
@@ -11,12 +17,12 @@ protocol Identity{
     var addressState: String? { get }
     var addressZip: String? { get }
     var dateOfBirth: String? { get }
-
-//    func convertedDOB() throws -> NSDate
+    
+    //    func convertedDOB() throws -> NSDate
 }
 
 protocol PassGenerator {
-
+    
     var entrant: EntrantIdentifiable {get}
     var entrantProfile: Identity {get}
     
@@ -109,7 +115,7 @@ enum DiscountAccessType: AmusementParkAccessable{
                 return 0.0
             case GuestType.VIP:
                 return 0.20
-             case EmployeeType.foodServices,EmployeeType.rideServices,EmployeeType.maintenanceServices,ManagerType.manager:
+            case EmployeeType.foodServices,EmployeeType.rideServices,EmployeeType.maintenanceServices,ManagerType.manager:
                 return 0.25
             default:
                 return 0
@@ -139,7 +145,7 @@ enum GuestType: EntrantIdentifiable{
         case .freeChild:
             return [AreaAccessType.amusementAreas,
                     RideAccessType.accessAllRides]
-        
+            
         }
         
     }
@@ -160,7 +166,7 @@ enum ManagerType: EntrantIdentifiable{
                     RideAccessType.accessAllRides,
                     DiscountAccessType.food,
                     DiscountAccessType.merchandise]
-             }
+        }
     }
 }
 
@@ -208,155 +214,3 @@ enum MissingInformation: Error{
 enum ErrorTypeCasting: Error{
     case UnknownUserType (String)
 }
-
-
-struct EntrantProfileInformation: Identity{
-    
-    var firstName: String?
-    var lastName: String?
-    var addressStreet: String?
-    var addressCity: String?
-    var addressState: String?
-    var addressZip: String?
-    var dateOfBirth: String?
-    
-    let allEnumInfoField: [EntrantInfoFields] = [.firstName, .lastName, .addressStreet, .addressCity, .addressState, .addressZip, .dateOfBirth]
-    
-    func requiredInfo(forEntrant: EntrantIdentifiable) -> Dictionary<EntrantInfoFields,Bool>{
-        var required: [EntrantInfoFields: Bool] = [:]
-        
-        for field in allEnumInfoField{
-            required[field] = field.isFieldManditory(forEntrant: forEntrant)
-        }
-        return required
-    }
-    
-    
-    func suppliedInfo(forEntrant: EntrantIdentifiable) -> Dictionary<EntrantInfoFields,String?>{
-        
-        var infoDict: [EntrantInfoFields: String] = [:]
-        
-        if let fname = self.firstName{infoDict[.firstName] = fname} else{infoDict[.firstName] = nil}
-        if let lname = self.lastName{infoDict[.lastName] = lname} else{infoDict[.lastName] = nil}
-        if let street = self.addressStreet{infoDict[.addressStreet] = street} else{infoDict[.addressStreet] = nil}
-        if let city = self.addressCity{infoDict[.addressCity] = city}else{infoDict[.addressCity] = nil}
-        if let state = self.addressState{infoDict[.addressState] = state} else{infoDict[.addressState] = nil}
-        if let ZIP = self.addressZip{infoDict[.addressZip] = ZIP} else{infoDict[.addressZip] = nil}
-        if let DOB = self.dateOfBirth{infoDict[.dateOfBirth] = DOB} else{infoDict[.dateOfBirth] = nil}
-        
-        return infoDict
-    }
-
-    //TODO: Implement func convertedDOB
-    
-//    func convertedDOB() throws -> NSDate {
-//
-//        var convertedDB: NSDate
-//        
-//        guard convertedDB = NSDate(self.dateOfBirth) else{
-//            throw MissingInformation.conversionError(EntrantInfoFields.dateOfBirth)
-//        }
-//        return NSDate(1/1/2011)
-//
-//    }
-    
-}
-
-//class Pass: PassGenerator{
-class Pass{
-    
-    var entrant: EntrantIdentifiable
-    var entrantProfile = EntrantProfileInformation()
-
-    
-    init(forEntrant: EntrantIdentifiable, firstName: String?, lastName: String?, street: String?, city: String?, state: String?, ZIP: String?, DOB: String?)throws{
-        
-        switch forEntrant {
-            case is GuestType:
-                self.entrant = forEntrant as! GuestType
-                print("Guest")
-            case is EmployeeType:
-                self.entrant  = forEntrant as! EmployeeType
-                print("Employee")
-            case is ManagerType:
-                self.entrant  = forEntrant as! ManagerType
-                print("Manager")
-            default:
-                throw ErrorTypeCasting.UnknownUserType("Unknow Entrant Type: \(forEntrant)")
-        }
-
-        entrantProfile = EntrantProfileInformation(firstName: firstName, lastName: lastName, addressStreet: street, addressCity: city, addressState: state, addressZip: ZIP, dateOfBirth: DOB)
-    }
-    
-
-    
-    //Method Queries EntrantProfile for supplied data versus Manditory data and throws is not all requirements are met.
-    
-    func hasManditoryInfoBeenSupplied() throws -> Bool{
-    
-        let manditoryFields = entrantProfile.requiredInfo(forEntrant: entrant)
-        let providedFields = entrantProfile.suppliedInfo(forEntrant: entrant)
-        var missingField: [EntrantInfoFields]?
-        
-        for (key,value) in manditoryFields{
-            
-            if value {
-                print("Checking Key: \(key.rawValue)")
-
-                if providedFields[key] == nil {
-                    print("Missing: \(key.rawValue)")
-                    
-                    if missingField != nil{
-                        missingField?.append(key)
-                    } else{
-                        missingField = [key]
-                    }
-                }
-            }
-        }
-    
-        if let errorMissinArr = missingField{
-            throw MissingInformation.missingRequiredField(errorMissinArr)
-
-        } else {
-            return true
-        }
-        
-    }
-
-//    func validateAccess(forArea: AmusementParkAccessable) -> Permissions{
-//        
-//        let areasAllowed = entrant.isAllowedInAreas()
-//        
-//        
-//    }
-    
-} // End of Pass Class
-        
-
-
-let person = GuestType.freeChild
-
-do{
-    let ParkPass = try Pass(forEntrant: person, firstName: "Sherief", lastName: "Wissa", street: nil, city: nil, state: nil, ZIP: nil, DOB: nil)
-    try ParkPass.hasManditoryInfoBeenSupplied()
-    
-    ParkPass.entrant
-    
-    
-} catch ErrorTypeCasting.UnknownUserType(let errorString){
-    print("ERROR: \(errorString)")
-
-} catch MissingInformation.missingRequiredField(let errorString){
-        print ("ERROR: Missing Information for the below field(s):")
-    for obj in errorString{
-        print("OBJECT: \(obj) | \(obj.rawValue)")
-    }
-
-} catch{
-    fatalError("BOOM")
-}
-
-
-
-

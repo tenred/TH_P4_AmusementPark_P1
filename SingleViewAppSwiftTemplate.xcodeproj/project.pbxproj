@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		118E57A61E667049007A6955 /* AmusementParkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E57A51E667049007A6955 /* AmusementParkGenerator.swift */; };
+		118271C11E7B8E0F00FCF61A /* Protocols_enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271C01E7B8E0F00FCF61A /* Protocols_enums.swift */; };
+		118271C31E7B8E8D00FCF61A /* EntrantProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271C21E7B8E8D00FCF61A /* EntrantProfile.swift */; };
+		118271C51E7B8EF200FCF61A /* PassGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271C41E7B8EF200FCF61A /* PassGenerator.swift */; };
 		3A8AADC91DF9B85E00A2B931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AADC81DF9B85E00A2B931 /* AppDelegate.swift */; };
 		3A8AADCB1DF9B85E00A2B931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AADCA1DF9B85E00A2B931 /* ViewController.swift */; };
 		3A8AADCE1DF9B85E00A2B931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8AADCC1DF9B85E00A2B931 /* Main.storyboard */; };
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		118E57A51E667049007A6955 /* AmusementParkGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmusementParkGenerator.swift; sourceTree = "<group>"; };
+		118271C01E7B8E0F00FCF61A /* Protocols_enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols_enums.swift; sourceTree = "<group>"; };
+		118271C21E7B8E8D00FCF61A /* EntrantProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrantProfile.swift; sourceTree = "<group>"; };
+		118271C41E7B8EF200FCF61A /* PassGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassGenerator.swift; path = ../PassGenerator.swift; sourceTree = "<group>"; };
 		3A8AADC51DF9B85E00A2B931 /* SingleViewAppSwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleViewAppSwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8AADC81DF9B85E00A2B931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8AADCA1DF9B85E00A2B931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,13 +103,15 @@
 		3A8AADC71DF9B85E00A2B931 /* SingleViewAppSwiftTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				118271C01E7B8E0F00FCF61A /* Protocols_enums.swift */,
+				118271C21E7B8E8D00FCF61A /* EntrantProfile.swift */,
+				118271C41E7B8EF200FCF61A /* PassGenerator.swift */,
 				3A8AADC81DF9B85E00A2B931 /* AppDelegate.swift */,
 				3A8AADCA1DF9B85E00A2B931 /* ViewController.swift */,
 				3A8AADCC1DF9B85E00A2B931 /* Main.storyboard */,
 				3A8AADCF1DF9B85E00A2B931 /* Assets.xcassets */,
 				3A8AADD11DF9B85E00A2B931 /* LaunchScreen.storyboard */,
 				3A8AADD41DF9B85E00A2B931 /* Info.plist */,
-				118E57A51E667049007A6955 /* AmusementParkGenerator.swift */,
 			);
 			path = SingleViewAppSwiftTemplate;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				118E57A61E667049007A6955 /* AmusementParkGenerator.swift in Sources */,
+				118271C11E7B8E0F00FCF61A /* Protocols_enums.swift in Sources */,
+				118271C31E7B8E8D00FCF61A /* EntrantProfile.swift in Sources */,
 				3A8AADCB1DF9B85E00A2B931 /* ViewController.swift in Sources */,
 				3A8AADC91DF9B85E00A2B931 /* AppDelegate.swift in Sources */,
+				118271C51E7B8EF200FCF61A /* PassGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
