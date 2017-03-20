@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		118271D71E80A45000FCF61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271D61E80A45000FCF61A /* AppDelegate.swift */; };
+		118271D91E80A45000FCF61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271D81E80A45000FCF61A /* ViewController.swift */; };
+		118271DC1E80A45000FCF61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118271DA1E80A45000FCF61A /* Main.storyboard */; };
+		118271DE1E80A45000FCF61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118271DD1E80A45000FCF61A /* Assets.xcassets */; };
+		118271E11E80A45000FCF61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */; };
+		118271EC1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271EB1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift */; };
+		118271F71E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118271E81E80A45100FCF61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118271CB1E80A45000FCF61A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118271D21E80A45000FCF61A;
+			remoteInfo = "Amuesement Park Generator1";
+		};
+		118271F31E80A45100FCF61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118271CB1E80A45000FCF61A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118271D21E80A45000FCF61A;
+			remoteInfo = "Amuesement Park Generator1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118271D31E80A45000FCF61A /* Amuesement Park Generator1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amuesement Park Generator1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		118271D61E80A45000FCF61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		118271D81E80A45000FCF61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		118271DB1E80A45000FCF61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		118271DD1E80A45000FCF61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		118271E01E80A45000FCF61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		118271E21E80A45000FCF61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118271E71E80A45100FCF61A /* Amuesement Park Generator1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amuesement Park Generator1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		118271EB1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amuesement_Park_Generator1Tests.swift; sourceTree = "<group>"; };
+		118271ED1E80A45100FCF61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118271F21E80A45100FCF61A /* Amuesement Park Generator1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amuesement Park Generator1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amuesement_Park_Generator1UITests.swift; sourceTree = "<group>"; };
+		118271F81E80A45100FCF61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118271D01E80A45000FCF61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271E41E80A45100FCF61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271EF1E80A45100FCF61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		118271CA1E80A45000FCF61A = {
+			isa = PBXGroup;
+			children = (
+				118271D51E80A45000FCF61A /* Amuesement Park Generator1 */,
+				118271EA1E80A45100FCF61A /* Amuesement Park Generator1Tests */,
+				118271F51E80A45100FCF61A /* Amuesement Park Generator1UITests */,
+				118271D41E80A45000FCF61A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		118271D41E80A45000FCF61A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118271D31E80A45000FCF61A /* Amuesement Park Generator1.app */,
+				118271E71E80A45100FCF61A /* Amuesement Park Generator1Tests.xctest */,
+				118271F21E80A45100FCF61A /* Amuesement Park Generator1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118271D51E80A45000FCF61A /* Amuesement Park Generator1 */ = {
+			isa = PBXGroup;
+			children = (
+				118271D61E80A45000FCF61A /* AppDelegate.swift */,
+				118271D81E80A45000FCF61A /* ViewController.swift */,
+				118271DA1E80A45000FCF61A /* Main.storyboard */,
+				118271DD1E80A45000FCF61A /* Assets.xcassets */,
+				118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */,
+				118271E21E80A45000FCF61A /* Info.plist */,
+			);
+			path = "Amuesement Park Generator1";
+			sourceTree = "<group>";
+		};
+		118271EA1E80A45100FCF61A /* Amuesement Park Generator1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				118271EB1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift */,
+				118271ED1E80A45100FCF61A /* Info.plist */,
+			);
+			path = "Amuesement Park Generator1Tests";
+			sourceTree = "<group>";
+		};
+		118271F51E80A45100FCF61A /* Amuesement Park Generator1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */,
+				118271F81E80A45100FCF61A /* Info.plist */,
+			);
+			path = "Amuesement Park Generator1UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		118271D21E80A45000FCF61A /* Amuesement Park Generator1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118271FB1E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1" */;
+			buildPhases = (
+				118271CF1E80A45000FCF61A /* Sources */,
+				118271D01E80A45000FCF61A /* Frameworks */,
+				118271D11E80A45000FCF61A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amuesement Park Generator1";
+			productName = "Amuesement Park Generator1";
+			productReference = 118271D31E80A45000FCF61A /* Amuesement Park Generator1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		118271E61E80A45100FCF61A /* Amuesement Park Generator1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118271FE1E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1Tests" */;
+			buildPhases = (
+				118271E31E80A45100FCF61A /* Sources */,
+				118271E41E80A45100FCF61A /* Frameworks */,
+				118271E51E80A45100FCF61A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118271E91E80A45100FCF61A /* PBXTargetDependency */,
+			);
+			name = "Amuesement Park Generator1Tests";
+			productName = "Amuesement Park Generator1Tests";
+			productReference = 118271E71E80A45100FCF61A /* Amuesement Park Generator1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		118271F11E80A45100FCF61A /* Amuesement Park Generator1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118272011E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1UITests" */;
+			buildPhases = (
+				118271EE1E80A45100FCF61A /* Sources */,
+				118271EF1E80A45100FCF61A /* Frameworks */,
+				118271F01E80A45100FCF61A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118271F41E80A45100FCF61A /* PBXTargetDependency */,
+			);
+			name = "Amuesement Park Generator1UITests";
+			productName = "Amuesement Park Generator1UITests";
+			productReference = 118271F21E80A45100FCF61A /* Amuesement Park Generator1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		118271CB1E80A45000FCF61A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "10 Red Hacks Pty Ltd";
+				TargetAttributes = {
+					118271D21E80A45000FCF61A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					118271E61E80A45100FCF61A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 118271D21E80A45000FCF61A;
+					};
+					118271F11E80A45100FCF61A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 118271D21E80A45000FCF61A;
+					};
+				};
+			};
+			buildConfigurationList = 118271CE1E80A45000FCF61A /* Build configuration list for PBXProject "Amuesement Park Generator1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 118271CA1E80A45000FCF61A;
+			productRefGroup = 118271D41E80A45000FCF61A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				118271D21E80A45000FCF61A /* Amuesement Park Generator1 */,
+				118271E61E80A45100FCF61A /* Amuesement Park Generator1Tests */,
+				118271F11E80A45100FCF61A /* Amuesement Park Generator1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118271D11E80A45000FCF61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118271E11E80A45000FCF61A /* LaunchScreen.storyboard in Resources */,
+				118271DE1E80A45000FCF61A /* Assets.xcassets in Resources */,
+				118271DC1E80A45000FCF61A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271E51E80A45100FCF61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271F01E80A45100FCF61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118271CF1E80A45000FCF61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118271D91E80A45000FCF61A /* ViewController.swift in Sources */,
+				118271D71E80A45000FCF61A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271E31E80A45100FCF61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118271EC1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118271EE1E80A45100FCF61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118271F71E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118271E91E80A45100FCF61A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118271D21E80A45000FCF61A /* Amuesement Park Generator1 */;
+			targetProxy = 118271E81E80A45100FCF61A /* PBXContainerItemProxy */;
+		};
+		118271F41E80A45100FCF61A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118271D21E80A45000FCF61A /* Amuesement Park Generator1 */;
+			targetProxy = 118271F31E80A45100FCF61A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118271DA1E80A45000FCF61A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118271DB1E80A45000FCF61A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118271E01E80A45000FCF61A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		118271F91E80A45100FCF61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		118271FA1E80A45100FCF61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		118271FC1E80A45100FCF61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Amuesement Park Generator1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		118271FD1E80A45100FCF61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Amuesement Park Generator1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		118271FF1E80A45100FCF61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Amuesement Park Generator1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amuesement Park Generator1.app/Amuesement Park Generator1";
+			};
+			name = Debug;
+		};
+		118272001E80A45100FCF61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Amuesement Park Generator1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amuesement Park Generator1.app/Amuesement Park Generator1";
+			};
+			name = Release;
+		};
+		118272021E80A45100FCF61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Amuesement Park Generator1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Amuesement Park Generator1";
+			};
+			name = Debug;
+		};
+		118272031E80A45100FCF61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Amuesement Park Generator1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Amuesement Park Generator1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118271CE1E80A45000FCF61A /* Build configuration list for PBXProject "Amuesement Park Generator1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118271F91E80A45100FCF61A /* Debug */,
+				118271FA1E80A45100FCF61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118271FB1E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118271FC1E80A45100FCF61A /* Debug */,
+				118271FD1E80A45100FCF61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		118271FE1E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118271FF1E80A45100FCF61A /* Debug */,
+				118272001E80A45100FCF61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		118272011E80A45100FCF61A /* Build configuration list for PBXNativeTarget "Amuesement Park Generator1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118272021E80A45100FCF61A /* Debug */,
+				118272031E80A45100FCF61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 118271CB1E80A45000FCF61A /* Project object */;
+}
