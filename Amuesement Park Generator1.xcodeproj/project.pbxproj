@@ -14,6 +14,7 @@
 		118271E11E80A45000FCF61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */; };
 		118271EC1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271EB1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift */; };
 		118271F71E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */; };
+		118272051E80A4CD00FCF61A /* structEntrantProfileInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		118271F21E80A45100FCF61A /* Amuesement Park Generator1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amuesement Park Generator1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amuesement_Park_Generator1UITests.swift; sourceTree = "<group>"; };
 		118271F81E80A45100FCF61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = structEntrantProfileInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		118271CA1E80A45000FCF61A = {
 			isa = PBXGroup;
 			children = (
+				118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */,
 				118271D51E80A45000FCF61A /* Amuesement Park Generator1 */,
 				118271EA1E80A45100FCF61A /* Amuesement Park Generator1Tests */,
 				118271F51E80A45100FCF61A /* Amuesement Park Generator1UITests */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					118271D21E80A45000FCF61A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 947RGXA3P3;
 						ProvisioningStyle = Automatic;
 					};
 					118271E61E80A45100FCF61A = {
@@ -261,6 +265,7 @@
 			files = (
 				118271D91E80A45000FCF61A /* ViewController.swift in Sources */,
 				118271D71E80A45000FCF61A /* AppDelegate.swift in Sources */,
+				118272051E80A4CD00FCF61A /* structEntrantProfileInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 947RGXA3P3;
 				INFOPLIST_FILE = "Amuesement Park Generator1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1";
@@ -422,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 947RGXA3P3;
 				INFOPLIST_FILE = "Amuesement Park Generator1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.10RedHacks.Amuesement-Park-Generator1";
