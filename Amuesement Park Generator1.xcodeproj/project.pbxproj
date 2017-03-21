@@ -14,7 +14,10 @@
 		118271E11E80A45000FCF61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */; };
 		118271EC1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271EB1E80A45100FCF61A /* Amuesement_Park_Generator1Tests.swift */; };
 		118271F71E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */; };
-		118272051E80A4CD00FCF61A /* structEntrantProfileInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */; };
+		118272051E80A4CD00FCF61A /* EntrantProfileInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118272041E80A4CD00FCF61A /* EntrantProfileInformation.swift */; };
+		118272071E80A65800FCF61A /* Protocol_definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118272061E80A65800FCF61A /* Protocol_definitions.swift */; };
+		118272091E80A67900FCF61A /* Enum_definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118272081E80A67900FCF61A /* Enum_definitions.swift */; };
+		1182720B1E80A6B700FCF61A /* ParkPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1182720A1E80A6B700FCF61A /* ParkPass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,10 @@
 		118271F21E80A45100FCF61A /* Amuesement Park Generator1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amuesement Park Generator1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118271F61E80A45100FCF61A /* Amuesement_Park_Generator1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amuesement_Park_Generator1UITests.swift; sourceTree = "<group>"; };
 		118271F81E80A45100FCF61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = structEntrantProfileInformation.swift; sourceTree = "<group>"; };
+		118272041E80A4CD00FCF61A /* EntrantProfileInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntrantProfileInformation.swift; path = ../EntrantProfileInformation.swift; sourceTree = "<group>"; };
+		118272061E80A65800FCF61A /* Protocol_definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol_definitions.swift; sourceTree = "<group>"; };
+		118272081E80A67900FCF61A /* Enum_definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum_definitions.swift; sourceTree = "<group>"; };
+		1182720A1E80A6B700FCF61A /* ParkPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkPass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,6 @@
 		118271CA1E80A45000FCF61A = {
 			isa = PBXGroup;
 			children = (
-				118272041E80A4CD00FCF61A /* structEntrantProfileInformation.swift */,
 				118271D51E80A45000FCF61A /* Amuesement Park Generator1 */,
 				118271EA1E80A45100FCF61A /* Amuesement Park Generator1Tests */,
 				118271F51E80A45100FCF61A /* Amuesement Park Generator1UITests */,
@@ -100,11 +105,15 @@
 		118271D51E80A45000FCF61A /* Amuesement Park Generator1 */ = {
 			isa = PBXGroup;
 			children = (
-				118271D61E80A45000FCF61A /* AppDelegate.swift */,
+				118272061E80A65800FCF61A /* Protocol_definitions.swift */,
+				118272081E80A67900FCF61A /* Enum_definitions.swift */,
+				118272041E80A4CD00FCF61A /* EntrantProfileInformation.swift */,
+				1182720A1E80A6B700FCF61A /* ParkPass.swift */,
 				118271D81E80A45000FCF61A /* ViewController.swift */,
 				118271DA1E80A45000FCF61A /* Main.storyboard */,
 				118271DD1E80A45000FCF61A /* Assets.xcassets */,
 				118271DF1E80A45000FCF61A /* LaunchScreen.storyboard */,
+				118271D61E80A45000FCF61A /* AppDelegate.swift */,
 				118271E21E80A45000FCF61A /* Info.plist */,
 			);
 			path = "Amuesement Park Generator1";
@@ -265,7 +274,10 @@
 			files = (
 				118271D91E80A45000FCF61A /* ViewController.swift in Sources */,
 				118271D71E80A45000FCF61A /* AppDelegate.swift in Sources */,
-				118272051E80A4CD00FCF61A /* structEntrantProfileInformation.swift in Sources */,
+				118272071E80A65800FCF61A /* Protocol_definitions.swift in Sources */,
+				118272051E80A4CD00FCF61A /* EntrantProfileInformation.swift in Sources */,
+				1182720B1E80A6B700FCF61A /* ParkPass.swift in Sources */,
+				118272091E80A67900FCF61A /* Enum_definitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
